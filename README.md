@@ -103,3 +103,10 @@ python3 tests/octop_mcp_approval.py      # 审批流（会临时改实例策略�
 
 - Octop 项目：<https://github.com/TencentCloud/Octop>
 - WorkBuddy 连接器开发规范：<https://open.workbuddy.cn/docs/connector>
+
+## License
+
+[MIT](LICENSE) © 2026 HUANG Cheng
+
+`connector/icon.svg` 取自 [Octop](https://github.com/TencentCloud/Octop) 官方仓库的 logo mark（Copyright (c) 2026 Octop），同样以 MIT 许可使用。
+
