@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "octop": {
+      "type": "streamableHttp",
+      "url": "${SCHEMA}://${OCTOP_HOST}/api/mcp/agents",
+      "headers": {
+        "Authorization": "Bearer ${OCTOP_ACCESS_TOKEN}"
+      },
+      "timeout": 300000
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "title": "连接 Octop 实例",
+  "title_en": "Connect to Octop",
+  "description": "填写你的 Octop 实例地址和访问令牌。凭证仅保存在本机 ~/.workbuddy 目录下，不会上传云端。",
+  "description_en": "Provide your Octop instance address and access token. Credentials are stored locally on this machine only.",
+  "docUrl": "https://github.com/TencentCloud/Octop",
+  "docLabel": "什么是 Octop？",
+  "fields": [
+    {
+      "key": "SCHEMA",
+      "label": "协议",
+      "label_en": "Protocol",
+      "type": "text",
+      "required": true,
+      "defaultValue": "http",
+      "placeholder": "http 或 https",
+      "description": "本地/桌面端实例填 http；云端 HTTPS 部署的实例填 https。"
+    },
+    {
+      "key": "OCTOP_HOST",
+      "label": "实例地址",
+      "label_en": "Instance Address",
+      "type": "text",
+      "required": true,
+      "defaultValue": "127.0.0.1:8088",
+      "placeholder": "127.0.0.1:8088 或 octop.example.com",
+      "description": "不含协议头。本地/桌面端实例默认 127.0.0.1:8088（端口可在 ~/.octop/config.json 的 port 字段修改）；云端实例（CVM/Lighthouse 等部署）请填写域名。"
+    },
+    {
+      "key": "OCTOP_ACCESS_TOKEN",
+      "label": "访问令牌",
+      "label_en": "Access Token",
+      "type": "password",
+      "required": true,
+      "placeholder": "粘贴 access_token（默认 24 小时有效）",
+      "description": "用 Octop 账号登录获取：curl -X POST ${SCHEMA}://${OCTOP_HOST}/api/auth/login -H 'Content-Type: application/json' -d '{\"username\":\"你的用户名\",\"password\":\"你的密码\"}'，取返回 JSON 中的 access_token 字段。默认有效期 24 小时，过期后请重新获取并更新本表单。"
+    }
+  ]
+}

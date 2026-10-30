@@ -1,0 +1,25 @@
+{
+  "name": "Octop",
+  "name_zh": "Octop",
+  "name_en": "Octop",
+  "description": "连接自托管或云端的 Octop 实例，列出专家、发起或继续专家对话，并处理工具审批。",
+  "description_zh": "连接自托管或云端的 Octop 实例，列出专家、发起或继续专家对话，并处理工具审批。",
+  "description_en": "Connect to a self-hosted or cloud Octop instance: list experts, start or continue expert conversations, and handle tool approvals.",
+  "source": "octop",
+  "type": "mcp",
+  "version": "1.0.0",
+  "auth_mode": "token",
+  "minWorkbuddyVersion": "4.24.0",
+  "examples_zh": [
+    "列出我的 Octop 实例上可用的专家",
+    "让 Octop 里的写作专家帮我起草一份周报",
+    "继续刚才和 Octop 专家的对话",
+    "Octop 专家请求批准执行命令，帮我处理这个审批"
+  ],
+  "examples_en": [
+    "List the experts available on my Octop instance",
+    "Ask the writing expert on Octop to draft a weekly report",
+    "Continue my previous conversation with an Octop expert",
+    "An Octop expert is requesting command approval, help me handle it"
+  ]
+}

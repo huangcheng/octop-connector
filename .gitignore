@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 打包产物（本地提交审核用，不入库）
+*.zip
+
+# 本地凭证（如自行创建）
+.env
